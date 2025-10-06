@@ -18,6 +18,9 @@ jobs:
                 ls -lstr
                 cat README.md
 
+            - name: install npm command
+              run: sudo apt-get install cowsay -y
+
             - name: third party content(create ascii cow words)
               run: cowsay -f dragon "Run for cover, I am a Dragon.....Drawer" >> dragon.txt
               
