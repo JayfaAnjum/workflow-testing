@@ -6,6 +6,10 @@ jobs:
     first_jobs:
         runs-on: ubuntu-latest
         steps: 
+            - name: checkout repo
+              uses: actions/checkout@v5
+
+              
             - name: welcome meassage
               run: echo "this is my first workflow"
               
